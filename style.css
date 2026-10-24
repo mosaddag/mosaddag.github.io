@@ -761,3 +761,13 @@ h1 {
     -webkit-touch-callout: none;
 }
 .cert-thumb:hover img { transform: none; }
+
+.handle {
+    margin-top: 22px;
+    font-size: 16px;
+    color: var(--muted);
+}
+
+.handle strong {
+    color: var(--ink);
+}
