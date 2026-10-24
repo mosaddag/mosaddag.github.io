@@ -62,3 +62,9 @@ if ("IntersectionObserver" in window) {
     );
     sections.forEach((s) => spy.observe(s));
 }
+
+// Email link: the address is assembled here so it is not sitting in the page source
+const emailLink = document.getElementById("email-link");
+if (emailLink) {
+    emailLink.href = "mailto:" + emailLink.dataset.user + "@" + emailLink.dataset.host;
+}
