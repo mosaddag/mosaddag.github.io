@@ -751,3 +751,13 @@ h1 {
 .cert-thumb:hover img {
     transform: scale(1.04);
 }
+
+/* Certificate images are display-only */
+.cert-thumb { pointer-events: none; }
+.cert-thumb img {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+}
+.cert-thumb:hover img { transform: none; }
