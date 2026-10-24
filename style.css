@@ -717,3 +717,14 @@ h1 {
     font-size: 15px;
     font-weight: 600;
 }
+
+/* Photo over initials: if profile.jpg is missing, the initials show instead */
+.avatar {
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar img {
+    position: absolute;
+    inset: 0;
+}
